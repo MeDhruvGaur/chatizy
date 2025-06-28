@@ -3,16 +3,19 @@ import "./myStyles.css";
 import SearchIcon from "@mui/icons-material/Search";
 import { IconButton } from "@mui/material";
 import logo from "../Images/live-chat_512px.png";
+import { useSelector } from "react-redux";
+
 
 function Groups() {
-  return (
+    const lightTheme = useSelector((state) => state.themeKey);
+  return ( 
     <div className="list-container">
-        <div className="ug-header">
+        <div className={"ug-header" + (lightTheme ? "" : " dark")}>
             <img 
             src={logo}
             style={{ height: "2rem", width: "2rem", marginLeft:"10px" }}
             />
-            <p className="ug-title">Available Groups</p>
+            <p className={"ug-title" + (lightTheme ? "" : " dark")}>Available Groups</p>
         </div>
         <div className='sb-search'>
         <IconButton>
