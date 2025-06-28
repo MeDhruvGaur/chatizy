@@ -42,7 +42,6 @@ function Sidebar() {
   return (
     <div className="sidebar-container">
       <div className={"sb-header" + (lightTheme ? "" : " dark")}>
-
         <div>
         <IconButton >
           <AccountCircleIcon className={"icon" + (lightTheme ? "" : " dark")}/>
