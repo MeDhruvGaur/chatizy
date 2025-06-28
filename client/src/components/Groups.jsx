@@ -4,7 +4,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { IconButton } from "@mui/material";
 import logo from "../Images/live-chat_512px.png";
 
-function Users_Groups() {
+function Groups() {
   return (
     <div className="list-container">
         <div className="ug-header">
@@ -12,7 +12,7 @@ function Users_Groups() {
             src={logo}
             style={{ height: "2rem", width: "2rem", marginLeft:"10px" }}
             />
-            <p className="ug-title">Online Users</p>
+            <p className="ug-title">Available Groups</p>
         </div>
         <div className='sb-search'>
         <IconButton>
@@ -48,4 +48,4 @@ function Users_Groups() {
   )
 }
 
-export default Users_Groups
+export default Groups;
